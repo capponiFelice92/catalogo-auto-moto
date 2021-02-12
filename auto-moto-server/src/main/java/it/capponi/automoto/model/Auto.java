@@ -5,13 +5,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 @Entity
 public class Auto implements Serializable {
 
     @Id
-    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 

@@ -689,3 +689,34 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-02-12 09:26:21.304 TRACE 4424 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Opel]
 2021-02-12 09:26:21.304 TRACE 4424 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [12]
 2021-02-12 09:26:21.307 DEBUG 4424 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select auto0_.id as id1_0_, auto0_.modello as modello2_0_, auto0_.prezzo as prezzo3_0_, auto0_.produttore as produtto4_0_ from auto auto0_
+2021-02-12 10:50:32.323  WARN 1696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-12 10:51:24.755 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from auto
+2021-02-12 10:51:24.777 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 10:51:24.778 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 10:51:24.793 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into auto (modello, prezzo, produttore, id) values (?, ?, ?, ?)
+2021-02-12 10:51:24.795 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Panda]
+2021-02-12 10:51:24.795 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [3400.0]
+2021-02-12 10:51:24.796 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Fiat]
+2021-02-12 10:51:24.797 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [13]
+2021-02-12 10:51:24.802 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 10:51:24.802 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 10:51:24.806 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into auto (modello, prezzo, produttore, id) values (?, ?, ?, ?)
+2021-02-12 10:51:24.806 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Punto]
+2021-02-12 10:51:24.807 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [2000.0]
+2021-02-12 10:51:24.807 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Fiat]
+2021-02-12 10:51:24.807 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [14]
+2021-02-12 10:51:24.810 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 10:51:24.811 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 10:51:24.813 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into auto (modello, prezzo, produttore, id) values (?, ?, ?, ?)
+2021-02-12 10:51:24.815 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bravo]
+2021-02-12 10:51:24.815 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [5000.0]
+2021-02-12 10:51:24.815 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Fiat]
+2021-02-12 10:51:24.816 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [15]
+2021-02-12 10:51:24.819 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 10:51:24.820 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 10:51:24.822 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into auto (modello, prezzo, produttore, id) values (?, ?, ?, ?)
+2021-02-12 10:51:24.823 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Meriva]
+2021-02-12 10:51:24.823 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [2500.0]
+2021-02-12 10:51:24.823 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Opel]
+2021-02-12 10:51:24.823 TRACE 1696 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [16]
+2021-02-12 10:51:24.858 DEBUG 1696 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select auto0_.id as id1_0_, auto0_.modello as modello2_0_, auto0_.prezzo as prezzo3_0_, auto0_.produttore as produtto4_0_ from auto auto0_
